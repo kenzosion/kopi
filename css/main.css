@@ -21,3 +21,15 @@ body{
   background: linear-gradient(rgba(255,255,255,0.85),rgba(255,255,255,0.85)),url('../img/bodyBcg.jpeg');
   color: var(--black);
 }
+
+/* header start */
+.header {
+  height: 100vh;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 80%;
+  position: relative;
+}
+/* header end  */
+
