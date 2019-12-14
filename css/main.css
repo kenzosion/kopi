@@ -3,6 +3,7 @@
 
 :root{
  --brightYellow:#E3B505;
+ --brightRed:rgb(227, 5, 5);
  --darkBrown:#BB9457;
  --yellow:rgb(242, 180, 80); 
  --brown:#382923;
@@ -30,11 +31,13 @@ body{
   align-items: center;
   grid-template-columns: 80%;
   position: relative;
+  opacity: 0.9;
 }
 
 @media screen and (max-width: 768px) {
   .header{
     background: url('../img/headerBcg.jpeg')center/cover fixed no-repeat;
+   
     /* background-position: center;
     background-size: cover;
     background-attachment: fixed;
@@ -51,14 +54,13 @@ body{
 }
 .banner__title{
   font-size: 3rem; 
-
   text-transform: capitalize;
-  color: var(--brightYellow)
+  color: var(--brightRed)
 }
 @media screen and (min-width:768px){
   .banner__title{
     font-size: 9rem;
-
+     color: var(--brightYellow)
   }
 }
 .banner__social-icon{
@@ -82,5 +84,19 @@ body{
   grid-column-gap: 0.5rem;
   justify-content: center;
 }
-
 /* banner end */
+
+/* video */
+.video__container{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.video__item{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
