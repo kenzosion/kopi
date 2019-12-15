@@ -31,7 +31,7 @@ body{
   align-items: center;
   grid-template-columns: 80%;
   position: relative;
-  opacity: 0.9;
+  /* opacity: 0.9; */
 }
 
 @media screen and (max-width: 768px) {
@@ -100,3 +100,40 @@ body{
   height: 100%;
   object-fit: cover;
 }
+/* video end*/
+
+/* nav btn start */
+.navBtn {
+  position: fixed;
+  top: 5%;
+  right: 5%;
+  font-size:3.5rem;
+   color: var(--yellow);
+  cursor: pointer;
+  animation-name: pulse;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+@media screen and (max-width: 768px) {
+  .navBtn {
+    position: fixed;
+    top: 10%;
+    right: 10%;
+    font-size: 1.5rem;
+    color: var(--brightRed)
+}
+}
+/* nav btn animation */
+@keyframes pulse{
+  0%{
+    transform: scale(1)
+  }
+  50%{
+transform: scale(1.5)
+  }
+  100%{
+transform: scale(1)
+  }
+}
+
+
