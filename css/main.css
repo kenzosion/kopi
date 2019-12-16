@@ -22,6 +22,20 @@ body{
   background: linear-gradient(rgba(255,255,255,0.85),rgba(255,255,255,0.85)),url('../img/bodyBcg.jpeg');
   color: var(--black);
 }
+/*  preloader start */
+.preloader{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--brightYellow);
+  z-index: 999;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
 
 /* header start */
 .header {
