@@ -170,7 +170,7 @@ transform: scale(1)
 
 @media screen and (max-width: 786px) {
   .nav {
-    display: none;
+    display: block;
   }
 }
 .nav__links{
